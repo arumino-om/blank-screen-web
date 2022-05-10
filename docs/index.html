@@ -12,6 +12,13 @@
             background-color: black;
         }
     </style>
-    
+    <script>
+        window.onload = function(){
+            let eml = document.getElementsByTagName("body")[0];
+            eml.addEventListener("click", function(){
+                document.body.requestFullscreen();
+            })
+        }
+    </script>
 </body>
 </html>
