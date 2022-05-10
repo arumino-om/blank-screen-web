@@ -12,11 +12,13 @@
             background-color: black;
         }
     </style>
+    <button id="fsbtn">fullscreen</button>
     <script>
         window.onload = function(){
-            let eml = document.getElementsByTagName("body")[0];
+            let eml = document.getElementById("fsbtn");
             eml.addEventListener("click", function(){
                 document.body.requestFullscreen();
+                eml.style.display = "none";
             })
         }
     </script>
